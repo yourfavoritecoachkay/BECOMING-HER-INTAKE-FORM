@@ -882,7 +882,7 @@
     </div>
 
     <div class="confirm-note">
-      Did not receive a confirmation email? Check your spam folder or reach out directly at <strong>support@yourfavoritecoachkay.com</strong>. I personally review every application within 24 hours.
+      Did not receive a confirmation email? Check your spam folder or reach out directly at <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f2818782829d8086b28b9d87809493849d809b8697919d93919a99938bdc919d9f">[email&#160;protected]</a></strong>. I personally review every application within 24 hours.
     </div>
 
   </div>
@@ -892,10 +892,10 @@
 <footer>
   <div class="fb">Your Favorite Coach Kay · HER Circle</div>
   <div class="fs">B.E.C.O.M.I.N.G. H.E.R. Retreat Application</div>
-  <div class="ft">Applications reviewed within 24 hours · support@yourfavoritecoachkay.com</div>
+  <div class="ft">Applications reviewed within 24 hours · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="73000603031c0107330a1c06011512051c011a0716101c12101b18120a5d101c1e">[email&#160;protected]</a></div>
 </footer>
 
-<script>
+</script><script>
   const tierData = {
     Foundation: { price: '$5,500', deposit: '$2,750' },
     VIP:        { price: '$7,500', deposit: '$3,750' },
@@ -1075,7 +1075,17 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
       } else {
-        // Formspree returned an error
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-        alert('Something went wrong sending your application. Please email us directly at support@yourfavoritecoachkay.com and we will g
+        alert('Something went wrong sending your application. Please email us directly at support@yourfavoritecoachkay.com and we will get you sorted.');
+      }
+
+    } catch (err) {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+      alert('Something went wrong sending your application. Please email us directly at support@yourfavoritecoachkay.com and we will get you sorted.');
+    }
+  }
+</script>
+</body>
+</html>
